@@ -15,18 +15,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'],
+              },
+            },
+          },
         }
-    </script>
+        </script>        
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- main content -->
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- header section -->
@@ -220,16 +223,16 @@
                     <h3 class="font-semibold text-lg mb-3">Menu</h3>
                     <ul class="space-y-2">
                         <li>
-                        <a class="hover:text-orange-600" href="#">Home</a>
+                            <a class="hover:text-orange-600" href="#">Home</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">About Us</a>
+                            <a class="hover:text-orange-600" href="#">About Us</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Insurance</a>
+                            <a class="hover:text-orange-600" href="#">Insurance</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Privacy Policy</a>
+                            <a class="hover:text-orange-600" href="#">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -238,16 +241,16 @@
                     <h3 class="font-semibold text-lg mb-3">Our Service</h3>
                     <ul class="space-y-2">
                         <li>
-                        <a class="hover:text-orange-600" href="#">Life Insurance</a>
+                            <a class="hover:text-orange-600" href="#">Life Insurance</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Car insurance</a>
+                            <a class="hover:text-orange-600" href="#">Car insurance</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Health Insurance</a>
+                            <a class="hover:text-orange-600" href="#">Health Insurance</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">House Insurance</a>
+                            <a class="hover:text-orange-600" href="#">House Insurance</a>
                         </li>
                     </ul>
                 </div>
@@ -256,34 +259,36 @@
                     <h3 class="font-semibold text-lg mb-3">Help Info</h3>
                     <ul class="space-y-2">
                         <li>
-                        <a class="hover:text-orange-600" href="#">FAQs</a>
+                            <a class="hover:text-orange-600" href="#">FAQs</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Contact Us</a>
+                            <a class="hover:text-orange-600" href="#">Contact Us</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">About Us</a>
+                            <a class="hover:text-orange-600" href="#">About Us</a>
                         </li>
                         <li>
-                        <a class="hover:text-orange-600" href="#">Search</a>
+                            <a class="hover:text-orange-600" href="#">Search</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Fourth column -->
-                 <div>
+                <div>
                     <h3 class="font-semibold text-lg mb-3">Subscribe to our Newsletter</h3>
                     <div class="flex flex-col space-y-2">
                         <div>
-                            <input placeholder="Email Address" type="text" class="bg-transparent border-b-2 border-black w-4/6 md:w-5/6">
-                            <i class="fa-light fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-centera items-center"></i>
-                            <div class="flex justify-center justify-between w-4/5 mb-2 mt-4">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
+                            <input placeholder="Email Address" type="text"
+                                class="bg-transparent border-b-2 border-black w-4/6 md:w-5/6">
+                            <i
+                                class="fa-light fa-chevron-right w-7 h-7 bg-orange-600 inline-flex rounded-full text-white justify-centera items-center"></i>
+                            <div class="flex justify-between w-4/5 mb-2 mt-4">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
             <div class="text-center pt-4 mt-4">
                 <p class="text-sm text-gray-600">© 2027 UIDesign.to - All rights reserved.</p>
